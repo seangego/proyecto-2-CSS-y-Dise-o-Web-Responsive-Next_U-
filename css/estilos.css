@@ -1,0 +1,355 @@
+@font-face
+{
+    font-family: FuenteLato;
+    src:url(../fuentes/Lato-Italic.ttf);
+}
+
+body{
+    font-family: "Pacifico";
+    
+}
+
+a:active { 
+text-decoration:none; 
+} 
+
+header{
+    background: #5b7989;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-style: italic;
+    font-family: "Pacifico";
+    text-shadow: 0 0 3px white;
+    height: 150px;
+
+}
+
+header h1{
+    color: white;   
+    display: inline;
+    
+}
+
+#menu-principal ul {
+	float: right;
+	padding: 1%;
+    margin: 0;
+    display: inline;
+}
+#menu-principal ul li{
+    display: inline;
+}
+
+#contenido-central{
+    background: #82c3a6;
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+    height: 400px;
+
+}
+
+#contenido-central img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 30px black;
+}
+
+#contenido-secundario{
+    background: #d5c75f ;
+    border: black;
+    text-align: center;
+}
+
+#imagen-izquierda img{
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    border-color: black;
+    box-shadow: 2px 2px 30px black;
+    padding: 2px;
+    
+}
+#imagen-izquierda img:hover{
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 30px #82c3a6;
+    }
+   
+#imagen-derecha img{
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    border-color: black;
+    box-shadow: 2px 2px 30px black;
+    padding: 2px;
+}
+
+#imagen-derecha img:hover{
+    -ms-transform: translate(-5px,20px); /* IE 9 */
+	-webkit-transform: translate(-5px,20px); /* Chrome, Safari, Opera */
+    transform:translate(20px,-5px);
+    box-shadow: 2px 2px 30px #82c3a6;
+}
+/*div [id*="imagen"]{
+    min-height: 10px;
+    flex: 1 2 100%;
+}*/
+
+footer{
+    background: #C6d5c5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-style: italic;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    text-shadow: 0 0 3px white;
+    
+}
+
+footer .contenedor-footer{
+    width: 100%;
+    font-size: 12px;    
+    display: flex;
+}
+
+#bloque-redes-sociales img{
+    width: 4%;
+}
+
+#paisaje-central{
+    background: #d5c75f ;
+}
+
+#paisajeimagen-1 img{
+    -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#paisajeimagen-2 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#paisajeimagen-3 img{
+    -webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+#paisajeimagen-4 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#paisajeimagen-6 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#retrato-central{
+    background: #d5c75f ;
+}
+
+#retratoimagen-1 img{
+    -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#retratoimagen-2 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#retratoimagen-3 img{
+    -webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+#retratoimagen-4 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#retratoimagen-6 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+@media (max-width:1000px){
+
+    body{
+        font-family: "Pacifico";
+        width: 100%;
+                
+    }
+    header{
+        height: 170px;
+        font-size: 40px;
+    }
+    
+    header h1{
+        color: white;  
+        text-align: center;
+        display: block;
+        font-size: 36px;
+    }
+
+    #menu-principal{
+        width: 100%;
+        text-align: center;
+    }
+    #menu-principal ul {
+        
+        padding: 1%;
+        margin: 0;
+        text-align: center;
+        display: block;
+        float: initial;
+    }
+
+    
+
+    #imagen-izquierda{
+        widows: 100%;
+        height: 500px;
+    }
+    #imagen-derecha{
+        widows: 100%;
+        height: 500px;
+       
+    }
+    
+    .contenedor {
+        height: 1000px;
+        
+        display: flex;
+        flex-flow: column;
+        -ms-flex-flow: column;
+        text-align: center;
+    }
+    footer{
+        
+        padding: 50px;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-flow: column;
+        -ms-flex-flow: column;
+        text-align: center;
+        text-align: left;
+        
+        font-size: 12px; 
+    }
+
+    
+
+    #bloque-redes-sociales img{
+        width: 4%;
+    }
+
+    section [id*="paisajeimagen"]{
+        padding: 20px;        
+    }
+
+    
+    #paisaje-central img{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    section [id*="retratoimagen"]{
+        padding: 20px;        
+    }
+
+    
+    #retrato-central img{
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+
+@media (min-width:1000px){
+    
+    header{
+        height: 100px;
+    }
+    
+    #menu-principal ul {
+        display: inline;
+    }
+    #imagen-izquierda{
+        width: 50%;
+    }
+    #imagen-derecha{
+        width: 50%;
+    }
+    .contenedor {
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+    }
+    div [id*="bloque"]{
+    
+        flex: 1 2 40%;
+        
+    }
+
+    #paisajes-f1 {
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+        width: 100%;
+    }
+    #paisajes-f2 {
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+        
+    }
+    
+    section [id*="paisajeimagen"]{
+        padding: 20px;        
+    }
+    section [id*="paisajeimagen"] img{
+        width: 100%;       
+    }
+
+      
+    #retrato-central img{
+        width: 100%;
+        text-align: center;
+        
+    }
+	
+	#retratos-f1 {
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+        
+    }
+    #retratos-f2 {
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+        
+    }
+    
+    section [id*="retratoimagen"]{
+        padding: 20px;        
+    }
+    section [id*="retratoimagen"] img{
+        width: 100%;       
+    }
+
+    div [id*="retratoimagen"]{
+    
+        flex: 1 2 40%;
+        
+    }
+    
+    footer{
+        padding: 20px
+    }
+    
+}
